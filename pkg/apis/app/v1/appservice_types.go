@@ -14,11 +14,11 @@ type AppServiceSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
 	// Add custom validation using kubebuilder tags: https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html
-	Size     *int32                      `json:"size"`
-	Image    string                      `json:"image"`
-	Resource corev1.ResourceRequirements `json:"resources,omitempty"`
-	Envs     []corev1.EnvVar             `json:"envs,omitempty"`
-	Ports    []corev1.ServicePort        `json:"ports,omitempty"`
+	Size      *int32                      `json:"size"`
+	Image     string                      `json:"image"`
+	Resources corev1.ResourceRequirements `json:"resources,omitempty"`
+	Envs      []corev1.EnvVar             `json:"envs,omitempty"`
+	Ports     []corev1.ServicePort        `json:"ports,omitempty"`
 }
 
 // AppServiceStatus defines the observed state of AppService
