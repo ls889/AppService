@@ -78,7 +78,7 @@ func (in *AppServiceSpec) DeepCopyInto(out *AppServiceSpec) {
 		*out = new(int32)
 		**out = **in
 	}
-	in.Resource.DeepCopyInto(&out.Resource)
+	in.Resources.DeepCopyInto(&out.Resources)
 	if in.Envs != nil {
 		in, out := &in.Envs, &out.Envs
 		*out = make([]corev1.EnvVar, len(*in))
